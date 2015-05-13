@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/IV_BaseView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/photo" />
+
+    <RelativeLayout
+        android:id="@+id/RL_BaseDrawView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/IV_Save"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/save" />
+
+    <ImageView
+        android:id="@+id/IV_Erase"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/IV_Save"
+        android:src="@drawable/eraser" />
+
+    <ImageView
+        android:id="@+id/IV_Pen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/IV_Erase"
+        android:src="@drawable/pen" />
+
+    <ImageView
+        android:id="@+id/IV_Load"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/IV_Save"
+        android:src="@drawable/load" />
+
+    <ImageView
+        android:id="@+id/IV_Clear"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/IV_Load"
+        android:src="@drawable/clear" />
+
+</RelativeLayout>
